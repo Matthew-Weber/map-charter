@@ -1,0 +1,15 @@
+<div class="row">
+	<% t.self.colorRange.forEach(function(d,i){%> 
+		<div class="col-sm-3 col-xs-6 col-md-2">
+			<div class="legendBoxwide" style="background-color:<%=d%>;"></div>
+			<div class="map-legend-text"><%=t.self.scaleDisplay[i]%></div>
+		</div>
+	<%})%>
+		<div class="col-sm-3 col-xs-6 col-md-2">
+			<div class="legendBoxwide hash"></div>
+			<div class="map-legend-text"><%= gettext('Hash value')%></div>
+		</div>
+
+</div>
+
+<div id="<%=t.self.targetDiv%>graphic"></div>
