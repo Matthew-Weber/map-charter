@@ -13,8 +13,8 @@
 		colorDomain:[60,70,80,90],
 		colorRange:[red1,red2,red3,red4,red5],
 		scaleDisplay:["Less than 60%","60-70%","70-80%","80-90%","90% or more"],
-//		legendTemplate:Reuters.Template.maplegend,
-//		tooltipTemplate:Reuters.Template.maptooltip,
+//		legendTemplate:Reuters.Graphics.Template.maplegend,
+//		tooltipTemplate:Reuters.Graphics.Template.maptooltip,
 		scaleType:"threshold",
 		colorValue:"pctcountywithout",
 		//hashValue:function(d){
@@ -48,8 +48,8 @@
 
 			return "<h3>"+d.properties.STATE+"</h3><br><p>Percentage of counties without abortion providers</p><h2>" + d.properties.pctcountywithout+"%</h2><br><p>Number of abortion providers</p><h2>" + d.properties.providers+"</h2>"
 		},
-		legendTemplate:Reuters.Template.maplegend,
-		tooltipTemplate:Reuters.Template.maptooltip,
+		legendTemplate:Reuters.Graphics.Template.maplegend,
+		tooltipTemplate:Reuters.Graphics.Template.maptooltip,
 		scaleType:"threshold",
 		colorValue:"pctcountywithout",
 		//hashValue:function(d){
@@ -84,8 +84,8 @@
 
 			return "<h3>"+d.properties.name+"</h3>"
 		},
-		legendTemplate:Reuters.Template.maplegend,
-		tooltipTemplate:Reuters.Template.maptooltip,
+		legendTemplate:Reuters.Graphics.Template.maplegend,
+		tooltipTemplate:Reuters.Graphics.Template.maptooltip,
 		scaleType:"threshold",
 		colorValue:"pctcountywithout",
 		//hashValue:function(d){
