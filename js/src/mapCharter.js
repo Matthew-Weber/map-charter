@@ -83,7 +83,7 @@ Reuters.Graphics.MapGenerator = Backbone.View.extend({
 	},
 	mapRender: function() { 
 		var self = this;
-
+        self.trigger("renderChart:start")
 		//FIX: need a jst to build the legend.
 		self.targetDiv = $(self.el).attr("id");
 		self.graphicDiv = self.targetDiv+"graphic";
@@ -163,17 +163,17 @@ Reuters.Graphics.MapGenerator = Backbone.View.extend({
 	        html: true, 
 	        placement:"bottom" 
 	    });			
-
+        self.trigger("renderChart:end")
 		//on resize call resize
 		$(window).on("resize", _.debounce(function(event) {
-			self.resize();
+			self.update();
 		},100));
 		
 	//end of render
 	},
-	resize: function() {
+	update: function() {
 		var self = this;
-
+        self.trigger("update:start")
 		self.width = $(self.el).width();
 		self.height = self.width * self.heightModifier;
 
@@ -209,6 +209,8 @@ Reuters.Graphics.MapGenerator = Backbone.View.extend({
 				if (d.properties.dy){return d.properties.dy * self.width;}
 				return 0;
 			});
+        self.trigger("update:end")
+
 	}, 
 
 //end of view

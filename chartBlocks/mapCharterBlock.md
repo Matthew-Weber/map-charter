@@ -1,5 +1,5 @@
 	Reuters.Graphics.usmap = new Reuters.Graphics.MapGenerator({
-		el: "#reuters-map",
+		el: "#reutersGraphic-chart1",
 		mapShapeURL: "//graphics.thomsonreuters.com/mapshapes/us-simple.json",
 		mapDataURL:"//d3sl9l9bcxfb5q.cloudfront.net/json/cc_scotus_abortion_map_county",
 		projection: "mercator",
@@ -98,4 +98,19 @@
 	}); 
 */
 
-
+Reuters.Graphics.usmap.on("renderChart:start", function(evt){
+    var self = this;
+    
+})		
+Reuters.Graphics.usmap.on("renderChart:end", function(evt){
+    var self = this;
+    
+})		
+Reuters.Graphics.usmap.on("update:start", function(evt){
+    var self = this;
+    
+})		
+Reuters.Graphics.usmap.on("update:end", function(evt){
+    var self = this;
+    
+})

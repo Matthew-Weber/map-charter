@@ -1,5 +1,5 @@
 {
-  "name": "mapCharter",
+  "name": "map-charter",
   "description": "Reuters map chart maker",
   "main": [
     "scss/mapchartstyles.scss",
@@ -8,11 +8,11 @@
     "chartBlocks/*.md"    
   ],
   "dependencies": {
-    "charterCommons": "https://github.com/Matthew-Weber/charter-commons.git#*",
+    "charter-commons": "https://github.com/Matthew-Weber/charter-commons.git#*",
     "d3-queue":"2.0.2",
     "textures":"1.0.4"    
   },   
-  "version": "0.0.3",
+  "version": "0.0.4",
    "ignore": [
     "/.*"
   ]
