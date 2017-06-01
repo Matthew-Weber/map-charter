@@ -173,8 +173,13 @@ Reuters.Graphics.MapGenerator = Backbone.View.extend({
 
 		self.$('.geography').tooltip({
 			html: true,
-			placement: "bottom"
+			constraints: [{
+				to: 'window',
+				attachment: "together",
+				pin: true
+			}]
 		});
+
 		self.trigger("renderChart:end");
 		//on resize call resize
 		$(window).on("resize", _.debounce(function (event) {
