@@ -7,7 +7,7 @@
 		dataIdProperty:"fips",
 		labelColumn:"STATEAP",
 		center:[ -98.5561,37.8106],
-		rotate:[-1.4,0],
+		rotate:[-2.0,0],
 		scaleModifier:.95,
 		heightModifier:.59,
 		colorDomain:[60,70,80,90],
